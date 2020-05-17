@@ -10,6 +10,7 @@ LOCAL_SRC_FILES := \
     service.cpp
 
 LOCAL_SHARED_LIBRARIES := \
+    libbase \
     libcutils \
     liblog \
     libhidlbase \
