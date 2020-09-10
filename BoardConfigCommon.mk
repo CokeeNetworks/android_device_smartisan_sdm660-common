@@ -25,6 +25,7 @@ COMMON_PATH := device/smartisan/sdm660-common
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
