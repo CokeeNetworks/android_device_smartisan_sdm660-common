@@ -328,7 +328,7 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     nfc_nci.nqx.default.hw \
-    vendor.nxp.hardware.nfc@1.2-service
+    vendor.nxp.hardware.nfc@2.0-service
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
