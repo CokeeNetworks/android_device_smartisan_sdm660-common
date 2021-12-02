@@ -97,9 +97,6 @@ BOARD_QTI_CAMERA_32BIT_ONLY := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_LD_SHIM_LIBS += /vendor/lib/libmmcamera_ppeiscore.so|/vendor/lib/libshim_camera.so
 
-# Charger
-BOARD_CHARGER_DISABLE_INIT_BLANK := true
-
 # CNE and DPM
 BOARD_USES_QCNE := true
 
