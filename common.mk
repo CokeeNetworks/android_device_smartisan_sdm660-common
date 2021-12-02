@@ -268,7 +268,7 @@ PRODUCT_PACKAGES += \
     qca6234-service.sh \
     init.target.device.rc \
     init.target.rc \
-    ueventd.rc \
+    ueventd.qcom.rc \
     fstab.qcom
 
 # Input
