@@ -222,9 +222,6 @@ VENDOR_SECURITY_PATCH := 2019-10-10
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
-# Timeservice
-BOARD_USES_QC_TIME_SERVICES := true
-
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn
