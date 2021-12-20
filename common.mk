@@ -373,6 +373,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml
+
 # Releasetools
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/prebuilt/bin/deunify.sh:install/bin/deunify.sh
