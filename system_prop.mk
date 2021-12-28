@@ -193,6 +193,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_3= \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1 \
+    persist.vendor.radio.mt_sms_ack=30 \
     persist.radio.redir_party_num=0 \
     persist.radio.rat_on=combine \
     persist.radio.sglte.eons_domain=ps \
