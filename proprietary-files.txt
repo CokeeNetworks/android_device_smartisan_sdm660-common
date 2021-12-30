@@ -759,18 +759,6 @@ lib64/lib_ifaa_tac.so
 lib64/libifaa_daemon.so
 lib64/libifaa_jni.so
 
-# IOP
-lib/vendor.qti.hardware.iop@1.0.so
-lib/vendor.qti.hardware.iop@2.0.so
-lib64/vendor.qti.hardware.iop@1.0.so
-lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
 # Keystore
 vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
@@ -868,28 +856,20 @@ etc/firmware/DE.o.sdm660:vendor/firmware/DE.o.sdm660
 vendor/firmware/libpn553_fw.so
 
 # Perf
-lib/libqti-perfd-client_system.so
-lib/libqti_performance.so
-lib/vendor.qti.hardware.perf@1.0.so
-lib64/libqti-perfd-client_system.so
-lib64/libqti_performance.so
-lib64/vendor.qti.hardware.perf@1.0.so
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
+vendor/etc/perf/commonresourceconfigs.xml|1db765e3a8fb902bdb648091178a709c34f3fb16
 vendor/etc/perf/perfboostsconfig.xml
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-iopd-client.so
+vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
+vendor/etc/perf/targetresourceconfigs.xml|7132f1e9ce3bb21b4854b81d6e5d24409251f177
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
 vendor/lib/vendor.qti.hardware.perf@1.0.so
 vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
 
 # Peripheral manager
