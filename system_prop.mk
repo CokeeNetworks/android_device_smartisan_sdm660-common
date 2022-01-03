@@ -59,6 +59,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.enc.target_support_bframe=1
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # Charging
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.chg.max_volt_mv=9000
