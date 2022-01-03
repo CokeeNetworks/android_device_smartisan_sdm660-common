@@ -96,7 +96,7 @@ on post-fs-data
     start bt-mac-generator
 
 on boot
-    start rmt_storage
+    start vendor.rmt_storage
     start rfs_access
 
     # Wifi firmware reload path
