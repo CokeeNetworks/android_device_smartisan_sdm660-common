@@ -14,6 +14,14 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.smartisan     u:object_r:hal_fingerprint_smartisan_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service.widevine                           u:object_r:hal_drm_widevine_exec:s0
 
+# Logic volume
+/(vendor|system/vendor)/bin/dm-tool		u:object_r:logic_volume_exec:s0
+/(vendor|system/vendor)/bin/logic_volume	u:object_r:logic_volume_exec:s0
+
+# Block device
+/dev/block/platform/soc/c0c4000.sdhci/by-name/ramdump	u:object_r:ramdump_block_device:s0
+/dev/block/platform/soc/1da4000.ufshc/su[a-z]		u:object_r:sec_block_device:s0
+
 # Root files
 /persist(/.*)?					u:object_r:persist_file:s0
 
