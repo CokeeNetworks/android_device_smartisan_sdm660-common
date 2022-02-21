@@ -126,10 +126,6 @@ on boot
     chown system system /mnt/vendor/persist/speccfg/submask
     chown system system /mnt/vendor/persist/speccfg/partition
 
-on property:sys.boot_completed=1
-    # Set BFQ I/O scheduler
-    setprop sys.io.scheduler "bfq"
-
 service bt-mac-generator /vendor/bin/bt-mac-generator
     class main
     user bluetooth
