@@ -727,8 +727,8 @@ vendor/lib/libsmwrapper.so
 vendor/lib/libsse.so
 
 # Logic volume
--sbin/dm-tool;rootfs
--sbin/logic_volume;rootfs
+-vendor/bin/dm-tool
+-vendor/bin/logic_volume
 
 # Keymaster
 vendor/lib/libkeymasterdeviceutils.so
