@@ -373,6 +373,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml
 
+# Recovery
+PRODUCT_PACKAGES += \
+    dm-tool \
+    logic_volume \
+    logic_volume.conf \
+    init.recovery.qcom.rc \
+    init.recovery.usb.rc
+
 # Releasetools
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/prebuilt/bin/deunify.sh:install/bin/deunify.sh
