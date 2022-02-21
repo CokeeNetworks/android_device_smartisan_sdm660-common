@@ -51,7 +51,7 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
-    exec -- /vendor/bin/logic_volume -m striped -r 2:3 -c 256
+    start logic_volume
     wait /dev/block/logic_data
 
     mount_all /vendor/etc/fstab.qcom
@@ -132,6 +132,11 @@ service bt-mac-generator /vendor/bin/bt-mac-generator
     group bluetooth
     oneshot
     disabled
+
+# Logic_volume
+service logic_volume /vendor/bin/logic_volume -f /vendor/etc/logic_volume.conf 
+    disabled
+    oneshot
 
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
