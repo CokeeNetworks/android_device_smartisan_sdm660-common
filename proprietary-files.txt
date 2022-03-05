@@ -1141,4 +1141,3 @@ vendor/lib64/libwvhidl.so|f267129071b24273fe191ee946178785bbf3cf77
 
 # Wi-Fi
 vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
