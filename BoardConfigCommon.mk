@@ -206,4 +206,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # inherit from the proprietary version
--include vendor/smartisan/sdm660-common/BoardConfigVendor.mk
+include vendor/smartisan/sdm660-common/BoardConfigVendor.mk
