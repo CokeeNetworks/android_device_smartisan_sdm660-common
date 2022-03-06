@@ -210,6 +210,7 @@ VENDOR_SECURITY_PATCH := 2019-10-10
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
