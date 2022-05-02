@@ -886,7 +886,6 @@ vendor/lib64/libqmi_cci.so|00d7bfe2ca99b9ec477235b39cb3b7b3bb501930
 # Radio
 -app/QtiSystemService/QtiSystemService.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
--app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 etc/permissions/embms.xml
