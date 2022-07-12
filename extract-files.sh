@@ -42,6 +42,13 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+    # Patch DRM blob to resolve moved symbol
+    vendor/lib/mediadrm/libwvdrmengine.so)
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
+        ;;
+    vendor/lib64/mediadrm/libwvdrmengine.so)
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
+        ;;
     vendor/lib64/libsettings.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
         ;;
