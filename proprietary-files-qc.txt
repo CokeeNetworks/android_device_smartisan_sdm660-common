@@ -170,7 +170,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 vendor/lib/mediadrm/libwvdrmengine.so|80cacada5f7fa5862d47ad2ff34ca5d6c5e73bb6
-vendor/lib64/libwvhidl.so
+vendor/lib64/libwvhidl.so|27a58ed722445436d273aa85f447a83ecab3ed5e
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # ESE-Powermanager
