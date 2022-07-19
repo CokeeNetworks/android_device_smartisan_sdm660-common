@@ -327,6 +327,11 @@ vendor/lib/libnwa.so
 vendor/lib/libsmwrapper.so
 vendor/lib/libsse.so
 
+# Logic volume - from ocean 6.6.6_TNT-201903130004-user-oce-d3ab68cfa6
+-vendor/bin/logic_volume|8a6a68f7ba615c2dd7d067e48fce0ea4cf487624
+vendor/etc/init/logic_volume.rc|beafa018e16eb11ded6f78716024bdf82b11022e
+vendor/etc/logic_volume.conf|a979af21010898623c34491bc18bf779e385ca38
+
 # Keymaster
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so

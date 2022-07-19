@@ -434,8 +434,7 @@ lib64/libifaa_daemon.so
 lib64/libifaa_jni.so
 
 # Logic volume
--sbin/dm-tool;rootfs
--sbin/logic_volume;rootfs
+-vendor/bin/dm-tool|ecb6474785daec9bbf18c6254711a46fab053672
 
 # Media firmware
 etc/firmware/DE.o.sdm660:vendor/firmware/DE.o.sdm660

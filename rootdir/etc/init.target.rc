@@ -51,7 +51,7 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
-    exec -- /sbin/logic_volume -m striped -r 2:3 -c 256
+    start logic_volume
     wait /dev/block/logic_data
 
     mount_all /vendor/etc/fstab.qcom
