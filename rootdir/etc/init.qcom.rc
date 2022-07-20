@@ -389,12 +389,12 @@ on post-fs-data
     #Start move time data to /data/vendor once post-fs-data done
     start vendor.move_time_data
 
-service nqnfcinfo /vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
-
+#service nqnfcinfo /vendor/bin/nqnfcinfo
+#    class late_start
+#    group nfc
+#    user system
+#    oneshot
+#
 service iop /vendor/bin/iop
     class main
     user root
@@ -752,18 +752,18 @@ service iprenew_wigig0 /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service ptt_socket_app /vendor/bin/ptt_socket_app -d
-    class main
-    user root
-    group root
-    oneshot
-
-service ptt_ffbm /vendor/bin/ptt_socket_app -f -d
-    user root
-    group root
-    disabled
-    oneshot
-
+#service ptt_socket_app /vendor/bin/ptt_socket_app -d
+#    class main
+#    user root
+#    group root
+#    oneshot
+#
+#service ptt_ffbm /vendor/bin/ptt_socket_app -f -d
+#    user root
+#    group root
+#    disabled
+#    oneshot
+#
 service wifi_ftmd /vendor/bin/wifi_ftmd
     user system
     group system inet net_admin
@@ -820,18 +820,18 @@ service dhcpcd_bnep4 /system/bin/dhcpcd -BKLG
     disabled
     oneshot
 
-service ssgqmigd /vendor/bin/ssgqmigd
-    class late_start
-    user radio
-    group radio
-    socket ssgqmig seqpacket 0660 radio inet
-
-service mlid /vendor/bin/mlid
-    class late_start
-    user gps
-    group gps
-    socket mlid stream 0666 gps gps
-
+#service ssgqmigd /vendor/bin/ssgqmigd
+#    class late_start
+#    user radio
+#    group radio
+#    socket ssgqmig seqpacket 0660 radio inet
+#
+#service mlid /vendor/bin/mlid
+#    class late_start
+#    user gps
+#    group gps
+#    socket mlid stream 0666 gps gps
+#
 service loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
@@ -892,11 +892,11 @@ on property:sys.boot_completed=1
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
 
-service qvop-daemon /vendor/bin/qvop-daemon
-    class late_start
-    user system
-    group system drmrpc
-
+#service qvop-daemon /vendor/bin/qvop-daemon
+#    class late_start
+#    user system
+#    group system drmrpc
+#
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system
@@ -1056,16 +1056,16 @@ service vendor.LKCore-rel /vendor/bin/LKCore
     user system
     group system log diag
 
-service qseeproxydaemon /vendor/bin/qseeproxydaemon
-    class late_start
-    user system
-    group system
-
-service esepmdaemon /vendor/bin/esepmdaemon
-    class core
-    user system
-    group nfc
-
+#service qseeproxydaemon /vendor/bin/qseeproxydaemon
+#    class late_start
+#    user system
+#    group system
+#
+#service esepmdaemon /vendor/bin/esepmdaemon
+#    class core
+#    user system
+#    group nfc
+#
 on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
@@ -1104,23 +1104,23 @@ service time_daemon /vendor/bin/time_daemon
     user root
     group root
 
-service qdmastatsd /vendor/bin/qdmastatsd
-    class late_start
-    user system
-    group readproc system net_bw_stats radio
-
-service vendor.vppservice /vendor/bin/vppservice
-    class main
-    user media
-    group camera
-
-service chre /vendor/bin/chre
-    class late_start
-    user system
-    group system
-    socket chre seqpacket 0660 root system
-    shutdown critical
-
+#service qdmastatsd /vendor/bin/qdmastatsd
+#    class late_start
+#    user system
+#    group readproc system net_bw_stats radio
+#
+#service vendor.vppservice /vendor/bin/vppservice
+#    class main
+#    user media
+#    group camera
+#
+#service chre /vendor/bin/chre
+#    class late_start
+#    user system
+#    group system
+#    socket chre seqpacket 0660 root system
+#    shutdown critical
+#
 # Set vendor-ril lib path based on Meta version
 on property:vendor.rild.libpath=*
     setprop rild.libpath ${vendor.rild.libpath}
@@ -1128,11 +1128,11 @@ on property:vendor.rild.libpath=*
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
 
-service seemp_healthd /vendor/bin/seemp_healthd
-    class late_start
-    user system
-    group system
-
+#service seemp_healthd /vendor/bin/seemp_healthd
+#    class late_start
+#    user system
+#    group system
+#
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
