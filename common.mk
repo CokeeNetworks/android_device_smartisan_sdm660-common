@@ -26,7 +26,7 @@ $(call inherit-product, vendor/smartisan/sdm660-common/sdm660-common-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-arrow
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/smartisan/sdm660-common
@@ -435,10 +435,6 @@ PRODUCT_PACKAGES += \
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
-
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
