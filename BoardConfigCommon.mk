@@ -202,8 +202,8 @@ TARGET_LD_SHIM_LIBS += /system/lib/lib-imsvideocodec.so|/system/lib/libshim_ims.
 TARGET_LD_SHIM_LIBS += /system/lib64/lib-imsvideocodec.so|/system/lib64/libshim_ims.so
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_smartisan
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+#TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_smartisan
+#TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-10-10

@@ -388,8 +388,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml
 
 # Releasetools
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/bin/deunify.sh:install/bin/deunify.sh
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/prebuilt/bin/deunify.sh:install/bin/deunify.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
