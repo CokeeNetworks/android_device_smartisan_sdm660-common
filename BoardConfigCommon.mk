@@ -65,7 +65,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/smartisan/sdm660
 TARGET_KERNEL_CONFIG := smartisan_sdm660_defconfig
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/$(HOST_OS)-x86/clang-r416183b
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/$(HOST_OS)-x86/clang-proton
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
