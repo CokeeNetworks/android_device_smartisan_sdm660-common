@@ -436,8 +436,8 @@ PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
 # Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \

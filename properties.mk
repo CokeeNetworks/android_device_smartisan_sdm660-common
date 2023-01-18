@@ -21,3 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.schd.cache=3500 \
     sys.vendor.shutdown.waittime=500 \
     ro.build.shutdown_timeout=0
+# Soc
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM660
