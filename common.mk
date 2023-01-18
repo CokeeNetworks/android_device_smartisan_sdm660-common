@@ -97,10 +97,11 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl:32 \
-    android.hardware.audio.effect@4.0-impl:32 \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio.effect@5.0-impl \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.1-impl:32 \
+    android.hardware.soundtrigger@2.1-impl \
+    audio.primary.sdm660 \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -164,7 +165,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service
 
 PRODUCT_PACKAGES += \
-    Snap
+    GCamGOPrebuilt
+#    Snap
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
