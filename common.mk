@@ -166,7 +166,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt
-#    Snap
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
